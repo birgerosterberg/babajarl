@@ -33,17 +33,51 @@ body {
     top: 0;
     left: 0;
   }
+  
 .head {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
-    left: 0;
+    left: 5%;
     top: 0;
-    opacity: 0.8;
+    opacity: 1;
     max-width: 320px;
-    width: 100%;    
+    width: 100%;
 }
+
+.parapoems {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color: #000;
+  opacity: 0.7;
+  border-radius: 50px;
+  padding: 20px;
+  line-height: 19px;
+
+  span {
+    font-size: 1.5em;
+  }
+
+  a {
+
+    &:link {
+      color: white;
+    }
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      color: #966919;
+    }
+    &:active {
+      color: #966919;
+    }
+  }
+}
+
+// Navbar fixed to footer and opacity added for smoothness 
+
   .navbar__container {
     display: flex;
     justify-content: center;
@@ -57,10 +91,31 @@ body {
         ul {
             display: flex;
             list-style: none;
-            gap: 20px;
+            gap: 5%;
+            margin-left: -90px;
+
             li {
                 text-decoration: none;
             }
         }
     }
+}
+
+// Media query to center the poem and logo text 
+
+@media only screen and (max-width: 805px) { 
+
+  .head {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    left: auto;
+    top: 0;
+    opacity: 1;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 -160px 0 0;
+}
 }
