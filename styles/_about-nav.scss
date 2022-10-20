@@ -112,6 +112,10 @@ body {
   padding: 10px;
   margin-right: 20px;
   
+   &-left {
+    align-self: flex-start;
+   }
+  
   a {
       text-decoration: none;
       color: white;
