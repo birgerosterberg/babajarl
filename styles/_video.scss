@@ -1,9 +1,14 @@
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     opacity: 0.9;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    object-fit: cover;
+
   }
