@@ -101,6 +101,38 @@ body {
     }
 }
 
+.social__links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-right: 20px;
+  
+  a {
+      text-decoration: none;
+      color: white;
+
+      &:link {
+          color: white;
+      }
+      &:active {
+          color: white;
+      }
+      &:focus {
+          color: #966919;
+          opacity: 0.5;
+      }
+      &:hover {
+          color: #966919;
+      }
+
+  }
+}
+
 // Media query to center the poem and logo text 
 
 @media only screen and (max-width: 805px) { 

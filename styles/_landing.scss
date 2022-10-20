@@ -7,6 +7,21 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
+    a {
+
+        &:link {
+          color: white;
+        }
+        &:visited {
+          color: white;
+        }
+        &:hover {
+          color: #966919;
+        }
+        &:active {
+          color: #966919;
+        }
+      }
   }
 
   .content2 {
