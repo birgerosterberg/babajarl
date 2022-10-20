@@ -1,1 +1,2 @@
 # babajarl
+MAIN COLOR SCHEME: #966919 !
